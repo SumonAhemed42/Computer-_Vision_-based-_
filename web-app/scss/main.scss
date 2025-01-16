@@ -1,0 +1,63 @@
+@import "reset",
+"variable";
+@font-face {
+    font-family: "Google sans";
+    src: url(".../font/Google-sans.woff2");
+}
+
+body {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-size: 18px;
+    }
+    *,
+    div,
+    p {
+        font-family: Google sans;
+        font-size: 1.1rem;
+    }
+}
+
+.mobileFrame {
+    width: 500px;
+    height: 800px;
+    // border: 1px solid $gray;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        border-bottom: 1px solid $gray;
+        margin-bottom: 32px;
+        img {
+            width: 80px;
+        }
+        .h1 {
+            color: $blue;
+            font-size: 1.5rem;
+        }
+    } //nav
+    .container {
+        .bird,
+        .iot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 200px;
+            }
+            .detect {
+                color: green;
+                font-size: 1.5rem;
+            }
+        } //.bird
+        .bird {
+            margin-bottom: 32px;
+        }
+    } //.container
+} //.mobileFrame
